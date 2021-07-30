@@ -1,6 +1,6 @@
 {
     "variants" :
     {
-        "normal" : { "model": "elementalist:block/elemental_pump" }
+        "" : { "model": "elementalist:block/elemental_pump" }
     }
 }

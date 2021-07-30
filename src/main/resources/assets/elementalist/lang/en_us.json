@@ -1,4 +1,7 @@
 {
   "item.elementalist.test_block": "Test Block",
-  "block.elementalist.test_block": "Test Block"
+  "block.elementalist.test_block": "Test Block",
+
+  "item.elementalist.elemental_pump": "Elemental Pump",
+  "block.elementalist.elemental_pump": "Elemental Pump"
 }

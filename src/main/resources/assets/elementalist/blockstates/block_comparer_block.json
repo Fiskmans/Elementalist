@@ -2,10 +2,7 @@
     "forge_marker": 1,
     "variants": 
 	{
-        "powered": 
-		{
-			"0":{ "model": "elementalist:block_comparer_block_inactive" },
-			"1":{ "model": "elementalist:block_comparer_block_active" }
-		}
+        "powered=false": 	{ "model": "elementalist:block_comparer_block_inactive" },
+		"powered=true":		{ "model": "elementalist:block_comparer_block_active" }
     }
 }

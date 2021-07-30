@@ -1,0 +1,8 @@
+{
+   "parent": "block/cube_bottom_top",
+   "textures": {
+       "top": "em:blocks/block_comparer_top_bottom_inactive",
+       "side": "em:blocks/block_comparer_side_inactive",
+       "bottom": "em:blocks/block_comparer_top_bottom_inactive"
+   }
+}

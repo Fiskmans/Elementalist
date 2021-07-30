@@ -1,0 +1,16 @@
+[
+{
+  "modid": "em",
+  "name": "Elementalist",
+  "description": "A mod about elements.",
+  "version": "0.1",
+  "mcversion": "1.12.2",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Fiskmans"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

@@ -1,8 +1,8 @@
 {
    "parent": "block/cube_bottom_top",
    "textures": {
-       "top": "em:blocks/pump_block_top",
-       "side": "em:blocks/pump_block_side",
-       "bottom": "em:blocks/pump_block_bottom"
+       "top": "elementalist:blocks/pump_block_top",
+       "side": "elementalist:blocks/pump_block_side",
+       "bottom": "elementalist:blocks/pump_block_bottom"
    }
 }

@@ -7190,7 +7190,7 @@ Build 1.8-11.14.0.1296:
 		
 		Includes loader for B3D models, with animation support
 		(net.minecraftforge.client.model.b3d).
-		Blender export plugin with compatible coordinate system:
+		Blender export plugin with compatible coordinate systelementalist:
 		https://github.com/RainWarrior/B3DExport
 		
 		OBJ loader is being written, will be included at some point in the
@@ -7241,7 +7241,7 @@ Build 1.8-11.14.0.1292-1.8:
 		
 		Includes loader for B3D models, with animation support
 		(net.minecraftforge.client.model.b3d).
-		Blender export plugin with compatible coordinate system:
+		Blender export plugin with compatible coordinate systelementalist:
 		https://github.com/RainWarrior/B3DExport
 		
 		OBJ loader is being written, will be included at some point in the

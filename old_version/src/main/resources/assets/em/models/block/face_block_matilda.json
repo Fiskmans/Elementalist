@@ -1,6 +1,6 @@
 {
    "parent": "block/cube_all",
    "textures": {
-       "all": "em:blocks/face_block_matilda"
+       "all": "elementalist:blocks/face_block_matilda"
    }
 }

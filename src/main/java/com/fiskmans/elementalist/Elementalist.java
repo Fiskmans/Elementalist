@@ -36,6 +36,7 @@ public class Elementalist
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::processIMC);
 
         ElementalistRegister.BLOCKS.register(bus);
+        ElementalistRegister.ITEMS.register(bus);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);

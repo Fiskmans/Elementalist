@@ -1,7 +1,7 @@
 {   "parent": "block/thin_block",
     "textures": {
-        "particle": "em:blocks/solid_nature_block",
-        "texture": "em:blocks/solid_nature_block"
+        "particle": "elementalist:blocks/solid_nature_block",
+        "texture": "elementalist:blocks/solid_nature_block"
     },
     "elements": [
         {   "from": [ 0, 0, 0 ],

@@ -1,0 +1,23 @@
+{
+    "forge_marker": 1,
+    "variants": {
+        "level": {
+            "0" : {"model": "em:flowing_ender0"},
+            "1" : {"model": "em:flowing_ender1"},
+            "2" : {"model": "em:flowing_ender2"},
+            "3" : {"model": "em:flowing_ender3"},
+            "4" : {"model": "em:flowing_ender4"},
+            "5" : {"model": "em:flowing_ender5"},
+            "6" : {"model": "em:flowing_ender6"},
+            "7" : {"model": "em:flowing_ender7"},
+            "8" : {"model": "em:flowing_ender8"},
+            "9" : {"model": "em:flowing_ender9"},
+            "10" : {"model": "em:flowing_ender10"},
+            "11" : {"model": "em:flowing_ender11"},
+            "12" : {"model": "em:flowing_ender12"},
+            "13" : {"model": "em:flowing_ender13"},
+            "14" : {"model": "em:flowing_ender14"},
+            "15" : {"model": "em:flowing_ender15"}
+        }
+    }
+}

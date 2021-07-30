@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+   
+    "pattern":
+    [
+        "RRR",
+        "RRR",
+        "RRR"
+    ],
+   
+    "key":
+    {
+        "R":
+        {
+            "item": "em:solid_ender"
+        }
+    },
+   
+    "result":
+    {
+        "item": "em:solid_ender_block",
+        "count": 1
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "forge_marker": 1,
+    "variants": {
+        "level": {
+            "0" : {"model": "em:flowing_nature0"},
+            "1" : {"model": "em:flowing_nature1"},
+            "2" : {"model": "em:flowing_nature2"},
+            "3" : {"model": "em:flowing_nature3"},
+            "4" : {"model": "em:flowing_nature4"},
+            "5" : {"model": "em:flowing_nature5"},
+            "6" : {"model": "em:flowing_nature6"},
+            "7" : {"model": "em:flowing_nature7"},
+            "8" : {"model": "em:flowing_nature8"},
+            "9" : {"model": "em:flowing_nature9"},
+            "10" : {"model": "em:flowing_nature10"},
+            "11" : {"model": "em:flowing_nature11"},
+            "12" : {"model": "em:flowing_nature12"},
+            "13" : {"model": "em:flowing_nature13"},
+            "14" : {"model": "em:flowing_nature14"},
+            "15" : {"model": "em:flowing_nature15"}
+        }
+    }
+}

@@ -1,0 +1,5 @@
+{
+    "variants": {
+        "normal": { "model": "em:solid_ender_block" }
+    }
+}

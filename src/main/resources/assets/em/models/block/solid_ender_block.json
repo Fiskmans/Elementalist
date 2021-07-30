@@ -1,6 +1,0 @@
-{
-   "parent": "block/cube_all",
-   "textures": {
-       "all": "em:blocks/solid_ender_block"
-   }
-}

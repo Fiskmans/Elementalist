@@ -1,8 +1,0 @@
-{
-   "parent": "block/cube_bottom_top",
-   "textures": {
-       "top": "em:blocks/condenser_top",
-       "side": "em:blocks/condenser_side",
-       "bottom": "em:blocks/condenser_bottom"
-   }
-}

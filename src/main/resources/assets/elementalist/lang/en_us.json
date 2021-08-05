@@ -3,5 +3,14 @@
   "block.elementalist.test_block": "Test Block",
 
   "item.elementalist.elemental_pump": "Elemental Pump",
-  "block.elementalist.elemental_pump": "Elemental Pump"
+  "block.elementalist.elemental_pump": "Elemental Pump",
+
+  "item.elementalist.condenser": "Condenser",
+  "block.elementalist.condenser": "Condenser",
+
+  "item.elementalist.crystalized_nature": "Crystalized Nature",
+  "block.elementalist.crystalized_nature": "Crystalized Nature",
+
+  "item.elementalist.crystalized_ender": "Crystalized Ender",
+  "block.elementalist.crystalized_ender": "Crystalized Ender"
 }

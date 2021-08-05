@@ -37,6 +37,7 @@ public class Elementalist
 
         ElementalistRegister.BLOCKS.register(bus);
         ElementalistRegister.ITEMS.register(bus);
+        ElementalistRegister.BLOCK_ENTITY.register(bus);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);

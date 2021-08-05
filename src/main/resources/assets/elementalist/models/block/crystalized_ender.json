@@ -1,6 +1,6 @@
 {
    "parent": "block/cube_all",
    "textures": {
-       "all": "elementalist:blocks/solid_nature_block"
+       "all": "elementalist:blocks/crystalized_ender"
    }
 }

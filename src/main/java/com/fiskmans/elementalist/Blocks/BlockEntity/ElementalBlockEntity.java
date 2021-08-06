@@ -1,22 +1,19 @@
 package com.fiskmans.elementalist.Blocks.BlockEntity;
 
-import com.fiskmans.elementalist.Blocks.ElementType;
+import com.fiskmans.elementalist.Blocks.Blocks.FlowingElementBase;
+import com.fiskmans.elementalist.ElementType;
+import com.fiskmans.elementalist.ElementTypeHelper;
 import com.fiskmans.elementalist.ElementalistRegister;
-import com.mojang.datafixers.types.Type;
 import net.minecraft.core.BlockPos;
-import net.minecraft.core.Vec3i;
-import net.minecraft.world.entity.ai.util.RandomPos;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.AirBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
-import org.apache.logging.log4j.LogManager;
 
 
-public class ElementalBlockEntity extends BlockEntity {
+public abstract class ElementalBlockEntity extends BlockEntity {
 
     final int maxFailsPerCheck = 5;
 
@@ -51,7 +48,7 @@ public class ElementalBlockEntity extends BlockEntity {
     {
         if(CanDissolve(level.getBlockState(blockPos).getBlock()))
         {
-            level.setBlock(blockPos, ElementalistRegister.TEST_BLOCK.get().defaultBlockState(), 0);
+            Dissolve(level, blockPos);
 
             return true;
         }
@@ -118,13 +115,22 @@ public class ElementalBlockEntity extends BlockEntity {
         return origin.offset(x, y, z);
     }
 
-    boolean CanDissolve(Block aBlock)
+    abstract boolean CanDissolve(Block aBlock);
+
+    int DissolveAmount(Block aBlock)
     {
-        if(aBlock == Blocks.OAK_LEAVES)
+        return 0;
+    }
+
+    void Dissolve(Level level, BlockPos pos)
+    {
+        Block flowingBlock = FlowingElementBase.BlockFromElement(ElementTypeHelper.InvertElement(myElementType));
+        if (flowingBlock == null)
         {
-            return true;
+            level.removeBlock(pos,false);
+            return;
         }
 
-        return false;
+        level.setBlock(pos, flowingBlock.defaultBlockState().setValue(FlowingElementBase.LEVEL,DissolveAmount(level.getBlockState(pos).getBlock())), Block.UPDATE_CLIENTS + Block.UPDATE_NEIGHBORS);
     }
 }

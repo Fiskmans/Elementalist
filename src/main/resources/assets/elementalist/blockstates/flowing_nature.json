@@ -1,23 +1,21 @@
 {
     "forge_marker": 1,
     "variants": {
-        "level": {
-            "0" : {"model": "elementalist:flowing_nature0"},
-            "1" : {"model": "elementalist:flowing_nature1"},
-            "2" : {"model": "elementalist:flowing_nature2"},
-            "3" : {"model": "elementalist:flowing_nature3"},
-            "4" : {"model": "elementalist:flowing_nature4"},
-            "5" : {"model": "elementalist:flowing_nature5"},
-            "6" : {"model": "elementalist:flowing_nature6"},
-            "7" : {"model": "elementalist:flowing_nature7"},
-            "8" : {"model": "elementalist:flowing_nature8"},
-            "9" : {"model": "elementalist:flowing_nature9"},
-            "10" : {"model": "elementalist:flowing_nature10"},
-            "11" : {"model": "elementalist:flowing_nature11"},
-            "12" : {"model": "elementalist:flowing_nature12"},
-            "13" : {"model": "elementalist:flowing_nature13"},
-            "14" : {"model": "elementalist:flowing_nature14"},
-            "15" : {"model": "elementalist:flowing_nature15"}
-        }
+            "level=0" : {"model": "elementalist:block/flowing_nature0"},
+            "level=1" : {"model": "elementalist:block/flowing_nature1"},
+            "level=2" : {"model": "elementalist:block/flowing_nature2"},
+            "level=3" : {"model": "elementalist:block/flowing_nature3"},
+            "level=4" : {"model": "elementalist:block/flowing_nature4"},
+            "level=5" : {"model": "elementalist:block/flowing_nature5"},
+            "level=6" : {"model": "elementalist:block/flowing_nature6"},
+            "level=7" : {"model": "elementalist:block/flowing_nature7"},
+            "level=8" : {"model": "elementalist:block/flowing_nature8"},
+            "level=9" : {"model": "elementalist:block/flowing_nature9"},
+            "level=10" : {"model": "elementalist:block/flowing_nature10"},
+            "level=11" : {"model": "elementalist:block/flowing_nature11"},
+            "level=12" : {"model": "elementalist:block/flowing_nature12"},
+            "level=13" : {"model": "elementalist:block/flowing_nature13"},
+            "level=14" : {"model": "elementalist:block/flowing_nature14"},
+            "level=15" : {"model": "elementalist:block/flowing_nature15"}
     }
 }

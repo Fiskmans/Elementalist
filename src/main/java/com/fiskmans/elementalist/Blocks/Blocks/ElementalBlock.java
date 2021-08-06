@@ -1,7 +1,9 @@
 package com.fiskmans.elementalist.Blocks.Blocks;
 
+import com.fiskmans.elementalist.Blocks.BlockEntity.CrystalizedEnderBlockEntity;
+import com.fiskmans.elementalist.Blocks.BlockEntity.CrystalizedNatureBlockEntity;
 import com.fiskmans.elementalist.Blocks.BlockEntity.ElementalBlockEntity;
-import com.fiskmans.elementalist.Blocks.ElementType;
+import com.fiskmans.elementalist.ElementType;
 import com.fiskmans.elementalist.ElementalistRegister;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.Level;
@@ -34,17 +36,13 @@ public class ElementalBlock extends BaseEntityBlock {
     @Override
     public BlockEntity newBlockEntity(BlockPos aPos, BlockState aState) {
 
-        BlockEntityType<?> blockEntityType = BlockEntityFromElementType(myElementType);
-        if (blockEntityType == null)
-            return null;
-
-        return new ElementalBlockEntity(blockEntityType, aPos, aState, myElementType);
+        return newBlockEntityFromElementType(aPos, aState, myElementType);
     }
 
     @Nullable
     @Override
     public <T extends BlockEntity> BlockEntityTicker<T> getTicker(Level level, BlockState state, BlockEntityType<T> type) {
-        return createTickerHelper(type, BlockEntityFromElementType(myElementType), ElementalBlockEntity::tick);
+        return createTickerHelper(type, BlockEntityTypeFromElementType(myElementType), ElementalBlockEntity::tick);
     }
 
 
@@ -53,7 +51,7 @@ public class ElementalBlock extends BaseEntityBlock {
     }
 
     @Nullable
-    BlockEntityType<? extends ElementalBlockEntity> BlockEntityFromElementType(ElementType aType)
+    BlockEntityType<? extends ElementalBlockEntity> BlockEntityTypeFromElementType(ElementType aType)
     {
         switch (myElementType)
         {
@@ -62,6 +60,22 @@ public class ElementalBlock extends BaseEntityBlock {
 
             case NATURE:
                 return ElementalistRegister.CRYSTALIZED_NATURE_BLOCK_ENTITY.get();
+        }
+
+        LOGGER.error(myElementType + " does not have a block entity mapping");
+        return null;
+    }
+
+    @Nullable
+    ElementalBlockEntity newBlockEntityFromElementType(BlockPos pos, BlockState state, ElementType aType)
+    {
+        switch (myElementType)
+        {
+            case ENDER:
+                return new CrystalizedEnderBlockEntity(pos, state);
+
+            case NATURE:
+                return new CrystalizedNatureBlockEntity(pos, state);
         }
 
         LOGGER.error(myElementType + " does not have a block entity mapping");

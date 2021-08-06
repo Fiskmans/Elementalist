@@ -1,4 +1,4 @@
-package com.fiskmans.elementalist.Blocks;
+package com.fiskmans.elementalist;
 
 
 public enum ElementType {

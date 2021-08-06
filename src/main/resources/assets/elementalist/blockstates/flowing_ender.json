@@ -1,23 +1,21 @@
 {
     "forge_marker": 1,
     "variants": {
-        "level": {
-            "0" : {"model": "elementalist:flowing_ender0"},
-            "1" : {"model": "elementalist:flowing_ender1"},
-            "2" : {"model": "elementalist:flowing_ender2"},
-            "3" : {"model": "elementalist:flowing_ender3"},
-            "4" : {"model": "elementalist:flowing_ender4"},
-            "5" : {"model": "elementalist:flowing_ender5"},
-            "6" : {"model": "elementalist:flowing_ender6"},
-            "7" : {"model": "elementalist:flowing_ender7"},
-            "8" : {"model": "elementalist:flowing_ender8"},
-            "9" : {"model": "elementalist:flowing_ender9"},
-            "10" : {"model": "elementalist:flowing_ender10"},
-            "11" : {"model": "elementalist:flowing_ender11"},
-            "12" : {"model": "elementalist:flowing_ender12"},
-            "13" : {"model": "elementalist:flowing_ender13"},
-            "14" : {"model": "elementalist:flowing_ender14"},
-            "15" : {"model": "elementalist:flowing_ender15"}
-        }
+            "level=0" : {"model": "elementalist:block/flowing_ender0"},
+            "level=1" : {"model": "elementalist:block/flowing_ender1"},
+            "level=2" : {"model": "elementalist:block/flowing_ender2"},
+            "level=3" : {"model": "elementalist:block/flowing_ender3"},
+            "level=4" : {"model": "elementalist:block/flowing_ender4"},
+            "level=5" : {"model": "elementalist:block/flowing_ender5"},
+            "level=6" : {"model": "elementalist:block/flowing_ender6"},
+            "level=7" : {"model": "elementalist:block/flowing_ender7"},
+            "level=8" : {"model": "elementalist:block/flowing_ender8"},
+            "level=9" : {"model": "elementalist:block/flowing_ender9"},
+            "level=10" : {"model": "elementalist:block/flowing_ender10"},
+            "level=11" : {"model": "elementalist:block/flowing_ender11"},
+            "level=12" : {"model": "elementalist:block/flowing_ender12"},
+            "level=13" : {"model": "elementalist:block/flowing_ender13"},
+            "level=14" : {"model": "elementalist:block/flowing_ender14"},
+            "level=15" : {"model": "elementalist:block/flowing_ender15"}
     }
 }

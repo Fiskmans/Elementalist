@@ -2,23 +2,14 @@ package com.fiskmans.elementalist;
 
 import com.fiskmans.elementalist.Blocks.BlockEntity.CrystalizedEnderBlockEntity;
 import com.fiskmans.elementalist.Blocks.BlockEntity.CrystalizedNatureBlockEntity;
-import com.fiskmans.elementalist.Blocks.BlockEntity.ElementalBlockEntity;
-import com.fiskmans.elementalist.Blocks.Blocks.Condenser;
-import com.fiskmans.elementalist.Blocks.Blocks.ElementalBlock;
-import com.fiskmans.elementalist.Blocks.Blocks.ElementalPump;
-import com.fiskmans.elementalist.Blocks.Blocks.TestBlock;
+import com.fiskmans.elementalist.Blocks.Blocks.*;
 
-import com.fiskmans.elementalist.Blocks.ElementType;
 import com.google.common.collect.Sets;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
-import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.material.Material;
-import net.minecraftforge.common.ToolType;
 import net.minecraftforge.fmllegacy.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -31,6 +22,8 @@ public class ElementalistRegister {
     public static final RegistryObject<Block> TEST_BLOCK = BLOCKS.register("test_block",() -> new TestBlock());
     public static final RegistryObject<Block> ELEMENTAL_PUMP_BLOCK = BLOCKS.register("elemental_pump",() -> new ElementalPump());
     public static final RegistryObject<Block> CONDENSER_BLOCK = BLOCKS.register("condenser",() -> new Condenser());
+    public static final RegistryObject<Block> FLOWING_NATURE_BLOCK = BLOCKS.register("flowing_nature",() -> new FlowingNature());
+    public static final RegistryObject<Block> FLOWING_ENDER_BLOCK = BLOCKS.register("flowing_ender",() -> new FlowingEnder());
 
     public static final RegistryObject<Block> CRYSTALIZED_NATURE_BLOCK = BLOCKS.register("crystalized_nature",() -> new ElementalBlock(ElementType.NATURE));
     public static final RegistryObject<Block> CRYSTALIZED_ENDER_BLOCK = BLOCKS.register("crystalized_ender",() -> new ElementalBlock(ElementType.ENDER));
